@@ -436,7 +436,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 0
-  m_AspectRatio: 2
+  m_AspectRatio: 5
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
@@ -481,9 +481,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1851430711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd69bd9935ca071a48a2ad5a54cf452c, type: 3}
+  m_Script: {fileID: 11500000, guid: aba306a7628cbe11b963ac940dbcf1eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layout: {fileID: 11400000, guid: 4aa26218a2b7accc9b20efa4440cc485, type: 2}
 --- !u!4 &1851430713
 Transform:
   m_ObjectHideFlags: 0
