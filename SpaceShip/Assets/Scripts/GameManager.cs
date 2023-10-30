@@ -45,10 +45,10 @@ public class GameManager : MonoBehaviour
 
     private void setTtrStyle(){
 		guiStyleTtr.fontSize = 22;
-		guiStyleTtr.normal.textColor = Color.blue;
+		guiStyleTtr.normal.textColor = Color.red;
 
 		Texture2D debugTex = new Texture2D(1,1);
-	  	debugTex.SetPixel(0,0, Color.green);
+	  	debugTex.SetPixel(0,0, Color.black);
 	  	debugTex.Apply();
 
 		guiStyleTtr.normal.background = debugTex;
@@ -160,6 +160,20 @@ public class GameManager : MonoBehaviour
             {
                 Invoke("changeScene", 0.5f);
             }
+        }
+
+        if(SceneManager.GetActiveScene().name == "intro"){
+            GUI.Label(new Rect(42, Screen.height-10 - 22, 1400, 22),
+                "Noticia urgente! Ao Vivo: Everson Zoio ameaça destruir o Brasil e toda a terra para exterminar a humanidade!",
+                guiStyleTtr
+            );
+        }
+
+        if(SceneManager.GetActiveScene().name == "menu"){
+            GUI.Label(new Rect(32, Screen.height-10 - 45, 500, 22),
+                "Teclas W e S para subir e descer\nTecla Espaço para atirar. Salve a terra!",
+                guiStyleTtr
+            );
         }
 
         if(SceneManager.GetActiveScene().name == "reset"){
