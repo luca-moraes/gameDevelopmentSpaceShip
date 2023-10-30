@@ -40,10 +40,14 @@
     <Analyzer Include="/home/eu/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/ExplosaoControl.cs" />
      <Compile Include="Assets/Scripts/ScoreManager.cs" />
      <Compile Include="Assets/Scripts/Pontuacao.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
+     <Compile Include="Assets/Scripts/ProjetilControl.cs" />
      <Compile Include="Assets/Scripts/Paralax.cs" />
+     <Compile Include="Assets/Scripts/PlayerControl.cs" />
+     <Compile Include="Assets/Scripts/EnemyControl.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/eu/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
